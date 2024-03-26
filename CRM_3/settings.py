@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'rbac.middleware.rbac.RbacMiddleware',
 ]
 
 ROOT_URLCONF = 'CRM_3.urls'
@@ -134,8 +135,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = "/media/"
 USER_MODEL_PATH = "web.models.UserInfo"
 MENU_SESSION_KEY = "usadhwqpofads"
-PERMISSION_SESSION_KEY = "usadhwqpofads"
+PERMISSION_SESSION_KEY = "usadhwsssqpofads"
 PERMISSION_VALID_URL = [
     '/login/',
+    '/logout/',
     '/admin/.*',
+    '/image/code/',
 ]
