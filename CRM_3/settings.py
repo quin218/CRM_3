@@ -141,4 +141,5 @@ PERMISSION_VALID_URL = [
     '/logout/',
     '/admin/.*',
     '/image/code/',
+    '/media/File/报名照片.jpg',
 ]

@@ -11,6 +11,9 @@ class CollageInfo(models.Model):
 
 
 class UserInfo(RbacUserInfo):
+    '''
+
+    '''
     username = models.CharField(verbose_name="姓名", max_length=16)
     collage = models.ForeignKey(verbose_name="学院", to="CollageInfo", to_field="id", on_delete=models.CASCADE)
 
